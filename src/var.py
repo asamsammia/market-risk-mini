@@ -2,14 +2,17 @@ import argparse
 import numpy as np
 import pandas as pd
 
-def hist_var(returns: pd.Series, alpha=0.95):
+
+def hist_var(returns: pd.Series, alpha: float = 0.95) -> float:
     q = 1 - alpha
     return -np.quantile(returns.dropna(), q)
 
-def hist_es(returns: pd.Series, alpha=0.95):
+
+def hist_es(returns: pd.Series, alpha: float = 0.95) -> float:
     q = 1 - alpha
     tail = returns[returns <= np.quantile(returns.dropna(), q)]
     return -tail.mean()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
