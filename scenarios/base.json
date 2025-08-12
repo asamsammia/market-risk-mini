@@ -1,0 +1,7 @@
+{
+  "name": "base",
+  "price_shock_pct": -0.1,
+  "sector_overrides": {
+    "Tech": -0.12
+  }
+}

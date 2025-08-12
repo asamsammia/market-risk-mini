@@ -1,0 +1,4 @@
+position_id,instrument,sector,mv_before,mv_after,pnl
+p1,EQUITY_A,Tech,1000.0,880.0,-120.0
+p2,EQUITY_B,Finance,1000.0,900.0,-100.0
+p3,ETF_X,Index,1125.0,1012.5,-112.5
